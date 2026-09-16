@@ -1368,8 +1368,8 @@ blockquote {
 
 .contact-messengers {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 28rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 32rem;
 }
 
 .contact-messengers .btn {
@@ -1984,6 +1984,7 @@ body.lightbox-open {
   }
   .contact-actions .btn { width: 100%; }
   .contact-messengers {
+    grid-template-columns: 1fr;
     max-width: none;
   }
   .contacts-details p {

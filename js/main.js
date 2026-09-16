@@ -2,9 +2,8 @@
   const links = window.StudioLinks || {};
   const BOOKING_URL = links.BOOKING_URL || "https://dikidi.net/2693";
   const TELEGRAM_URL = links.TELEGRAM_URL || "";
-  const MAX_URL = links.MAX_URL || "";
-  const MAP_URL = links.MAP_URL || "https://yandex.ru/maps/?text=%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%80%D1%8F%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%2C%2021";
-  const MAP_ROUTE_URL = links.MAP_ROUTE_URL || MAP_URL;
+  const MAP_URL = links.MAP_URL || "https://yandex.ru/maps/?text=%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB.%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%80%D1%8F%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%2C%2021";
+  const MAP_ROUTE_URL = links.MAP_ROUTE_URL || "https://yandex.ru/maps/?mode=routes&rtext=~%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB.%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%80%D1%8F%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%2C%2021&rtt=auto";
   const MAP_EMBED_URL = links.MAP_EMBED_URL || "";
 
   const isReadyUrl = (url) => Boolean(url) && url.indexOf("ВСТАВИТЬ") === -1;
@@ -36,7 +35,6 @@
   };
 
   bindOptionalLink("[data-link='telegram']", TELEGRAM_URL, false);
-  bindOptionalLink("[data-link='max']", MAX_URL, false);
   bindExternalLink("[data-link='map']", MAP_URL);
   bindExternalLink("[data-link='map-route']", MAP_ROUTE_URL);
 
