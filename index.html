@@ -106,7 +106,7 @@
           студия красоты<br>
           <em>Ольги Адельбаевой</em>
         </h1>
-        <p class="hero-lead">Стрижки, окрашивание и уход за волосами.</p>
+        <p class="hero-lead">Стрижки, окрашивание, уход за волосами, завивки и свой бренд косметики.</p>
         <div class="hero-actions">
           <a class="btn btn-fill" href="https://dikidi.net/2693" target="_blank" rel="noopener noreferrer">Записаться</a>
           <a class="btn btn-ghost" href="tel:+79125582393">Позвонить</a>
@@ -143,8 +143,16 @@
         <p class="lead">Цена указана для волос до плеч, если не указано иначе. Выберите услугу, чтобы открыть описание.</p>
       </div>
 
+      <div class="ba-tabs" aria-label="Категории">
+        <a href="#strizhki">Стрижки</a>
+        <a href="#okrashivanie">Окрашивание</a>
+        <a href="#uhod">Уход за волосами</a>
+        <a href="#zavivki">Завивки</a>
+        <a href="#adel">Свой бренд косметики</a>
+      </div>
+
       <div class="service-list">
-        <p class="service-group">Стрижка</p>
+        <p class="service-group" id="strizhki">Стрижка</p>
         <button class="service-row js-open-service" type="button" data-service="cut-women">
           <span class="num">01</span>
           <span class="title">Женская стрижка</span>
@@ -152,7 +160,7 @@
           <span class="arrow" aria-hidden="true">→</span>
         </button>
 
-        <p class="service-group">Окрашивание</p>
+        <p class="service-group" id="okrashivanie">Окрашивание</p>
         <button class="service-row js-open-service" type="button" data-service="color-complex">
           <span class="num">02</span>
           <span class="title">Сложное окрашивание волос</span>
@@ -242,7 +250,7 @@
           <span class="arrow" aria-hidden="true">→</span>
         </button>
 
-        <p class="service-group">Уход</p>
+        <p class="service-group" id="uhod">Уход</p>
         <button class="service-row js-open-service" type="button" data-service="care-peel">
           <span class="num">16</span>
           <span class="title">Пилинг кожи головы</span>
@@ -346,11 +354,6 @@
       <div class="section-head">
         <p class="eyebrow">До и после</p>
         <h2>Изменения,<br>которые <em>видно.</em></h2>
-      </div>
-      <div class="ba-tabs">
-        <button type="button" class="is-active" data-case="0">Окрашивание</button>
-        <button type="button" data-case="1">Стрижка</button>
-        <button type="button" data-case="2">Уход</button>
       </div>
       <div class="ba-stage">
         <div class="ba-compare" id="ba-compare">
